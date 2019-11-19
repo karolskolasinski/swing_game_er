@@ -1,8 +1,8 @@
-package pl.karolskolasinski.Components.Buttons;
+package pl.karolskolasinski.Model.Button;
 
-import pl.karolskolasinski.Components.Buttons.JButtonsSettings.JButtonsSettings;
-import pl.karolskolasinski.Components.Panels.LeftPanel;
-import pl.karolskolasinski.Components.Panels.ResetPanel;
+import pl.karolskolasinski.Model.Button.JButtonsSettings.JButtonsSettings;
+import pl.karolskolasinski.Model.Panel.LeftPanel;
+import pl.karolskolasinski.Model.Panel.ResetPanel;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,7 +1,7 @@
-package pl.karolskolasinski.Components.Labels;
+package pl.karolskolasinski.Model.Label;
 
-import pl.karolskolasinski.Components.Panels.LeftPanel;
-import pl.karolskolasinski.Components.Panels.ResetPanel;
+import pl.karolskolasinski.Model.Panel.LeftPanel;
+import pl.karolskolasinski.Model.Panel.ResetPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,7 +16,7 @@ public class HexCodeJLabel extends JLabel {
         codeLabel.setHorizontalAlignment(RIGHT);
         codeLabel.setForeground(Color.DARK_GRAY);
         codeLabel.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 26));
-        codeLabel.setText("#HEX");
+        codeLabel.setText("<html><span style='font-family: monospace;'>#HEX</span></html>");
     }
 
     public JLabel getCodeLabel() {

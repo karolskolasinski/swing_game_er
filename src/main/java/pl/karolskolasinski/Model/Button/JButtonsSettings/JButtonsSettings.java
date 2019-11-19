@@ -1,4 +1,4 @@
-package pl.karolskolasinski.Components.Buttons.JButtonsSettings;
+package pl.karolskolasinski.Model.Button.JButtonsSettings;
 
 import javax.swing.*;
 import java.awt.*;

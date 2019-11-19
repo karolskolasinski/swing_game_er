@@ -1,7 +1,7 @@
-package pl.karolskolasinski.Components.Labels;
+package pl.karolskolasinski.Model.Label;
 
-import pl.karolskolasinski.Components.Panels.LeftPanel;
-import pl.karolskolasinski.Components.Panels.ResetPanel;
+import pl.karolskolasinski.Model.Panel.LeftPanel;
+import pl.karolskolasinski.Model.Panel.ResetPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +15,7 @@ public class GreenCodeJLabel extends JLabel {
         codeLabel.setHorizontalAlignment(RIGHT);
         codeLabel.setForeground(Color.DARK_GRAY);
         codeLabel.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 26));
-        codeLabel.setText("<html>-5x<span style='font-size: 15px; color: rgb(0, 255, 0);'>\uD83D\uDD3A</span></html>");
+        codeLabel.setText("<html><span style='font-family: monospace;'>-5x</span><span style='font-size: 15px; color: rgb(0, 255, 0);'>\uD83D\uDD3A</span></html>");
     }
 
     public JLabel getCodeLabel() {

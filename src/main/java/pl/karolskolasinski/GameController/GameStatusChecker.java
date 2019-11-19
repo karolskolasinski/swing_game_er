@@ -1,8 +1,8 @@
 package pl.karolskolasinski.GameController;
 
-import pl.karolskolasinski.Components.Buttons.JButtonsSettings.JButtonsSettings;
-import pl.karolskolasinski.Components.Labels.HexCodeJLabel;
-import pl.karolskolasinski.Components.Buttons.ArrowJButtons;
+import pl.karolskolasinski.Model.Button.JButtonsSettings.JButtonsSettings;
+import pl.karolskolasinski.Model.Label.HexCodeJLabel;
+import pl.karolskolasinski.Model.Button.ArrowJButtons;
 
 public class GameStatusChecker {
     private JButtonsSettings jButtonsSettings = new JButtonsSettings();
@@ -15,7 +15,7 @@ public class GameStatusChecker {
                 && jButtonsWatchers.getjButtons()[5].getText().equals(jButtonsSettings.getDOWN())
                 && jButtonsWatchers.getjButtons()[6].getText().equals(jButtonsSettings.getDOWN())
         ) {
-            hexCodeJLabel.getCodeLabel().setText("#CCCCCC");
+            hexCodeJLabel.getCodeLabel().setText("<html><span style='font-family: monospace;'>#CCCCCC</span></html>");
         }
     }
 }

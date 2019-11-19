@@ -1,4 +1,4 @@
-package pl.karolskolasinski.Components;
+package pl.karolskolasinski.Model;
 
 import java.awt.*;
 

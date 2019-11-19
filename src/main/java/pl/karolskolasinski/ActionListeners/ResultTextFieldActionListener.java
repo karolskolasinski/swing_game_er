@@ -1,7 +1,7 @@
 package pl.karolskolasinski.ActionListeners;
 
-import pl.karolskolasinski.Components.Buttons.OpenLinkJButton;
-import pl.karolskolasinski.Components.TextField.ResultTextField;
+import pl.karolskolasinski.Model.Button.OpenLinkJButton;
+import pl.karolskolasinski.Model.TextField.ResultTextField;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;

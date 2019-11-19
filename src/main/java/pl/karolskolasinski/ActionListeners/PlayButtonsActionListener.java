@@ -1,8 +1,8 @@
 package pl.karolskolasinski.ActionListeners;
 
-import pl.karolskolasinski.Components.Buttons.JButtonsSettings.JButtonsSettings;
-import pl.karolskolasinski.Components.Labels.HexCodeJLabel;
-import pl.karolskolasinski.Components.Buttons.ArrowJButtons;
+import pl.karolskolasinski.Model.Button.JButtonsSettings.JButtonsSettings;
+import pl.karolskolasinski.Model.Label.HexCodeJLabel;
+import pl.karolskolasinski.Model.Button.ArrowJButtons;
 import pl.karolskolasinski.GameController.GameStatusChecker;
 
 import javax.swing.*;

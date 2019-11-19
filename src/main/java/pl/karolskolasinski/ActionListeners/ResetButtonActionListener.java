@@ -1,11 +1,11 @@
 package pl.karolskolasinski.ActionListeners;
 
-import pl.karolskolasinski.Components.Buttons.ArrowJButtons;
-import pl.karolskolasinski.Components.Buttons.JButtonsSettings.JButtonsSettings;
-import pl.karolskolasinski.Components.Buttons.OpenLinkJButton;
-import pl.karolskolasinski.Components.Buttons.ResetJButton;
-import pl.karolskolasinski.Components.Labels.HexCodeJLabel;
-import pl.karolskolasinski.Components.TextField.ResultTextField;
+import pl.karolskolasinski.Model.Button.ArrowJButtons;
+import pl.karolskolasinski.Model.Button.JButtonsSettings.JButtonsSettings;
+import pl.karolskolasinski.Model.Button.OpenLinkJButton;
+import pl.karolskolasinski.Model.Button.ResetJButton;
+import pl.karolskolasinski.Model.Label.HexCodeJLabel;
+import pl.karolskolasinski.Model.TextField.ResultTextField;
 
 import java.awt.event.ActionListener;
 
@@ -26,7 +26,7 @@ public class ResetButtonActionListener {
                 jButtonsSettings.arrowUpButtonSettings(arrowJButtons.getjButtons()[i]);
             }
             jButtonsSettings.blankButtonSettings(arrowJButtons.getjButtons()[3]);
-            codeLabel.getCodeLabel().setText("#HEX");
+            codeLabel.getCodeLabel().setText("<html><span style='font-family: monospace;'>#HEX</span></html>");
             openLinkJButton.getOpenLinkJButton().setVisible(false);
             resultTextField.getjTextField().setText("");
         };

@@ -1,7 +1,7 @@
-package pl.karolskolasinski.Components.TextField;
+package pl.karolskolasinski.Model.TextField;
 
-import pl.karolskolasinski.Components.Panels.LeftPanel;
-import pl.karolskolasinski.Components.Panels.ResetPanel;
+import pl.karolskolasinski.Model.Panel.LeftPanel;
+import pl.karolskolasinski.Model.Panel.ResetPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,7 +13,7 @@ public class ResultTextField extends JLabel {
         jTextField.setBorder(BorderFactory.createEtchedBorder());
         jTextField.setBounds(leftPanel.getLeftPanel().getWidth() + ((resetPanel.getResetPanel().getWidth() / 2) - 75), 327, 150, 50);
         jTextField.setHorizontalAlignment(CENTER);
-        jTextField.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 26));
+        jTextField.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 26));
     }
 
     public JTextField getjTextField() {
