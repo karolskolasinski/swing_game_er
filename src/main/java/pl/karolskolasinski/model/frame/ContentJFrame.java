@@ -1,4 +1,4 @@
-package pl.karolskolasinski.Model.Frame;
+package pl.karolskolasinski.model.frame;
 
 import javax.swing.*;
 import java.awt.*;

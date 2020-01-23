@@ -1,21 +1,21 @@
 package pl.karolskolasinski;
 
-import pl.karolskolasinski.ActionListeners.OpenLinkButtonActionListener;
-import pl.karolskolasinski.ActionListeners.PlayButtonsActionListener;
-import pl.karolskolasinski.ActionListeners.ResetButtonActionListener;
-import pl.karolskolasinski.ActionListeners.ResultTextFieldActionListener;
-import pl.karolskolasinski.Model.*;
-import pl.karolskolasinski.Model.Button.ArrowJButtons;
-import pl.karolskolasinski.Model.Button.OpenLinkJButton;
-import pl.karolskolasinski.Model.Button.ResetJButton;
-import pl.karolskolasinski.Model.Frame.ContentJFrame;
-import pl.karolskolasinski.Model.Label.GreenCodeJLabel;
-import pl.karolskolasinski.Model.Label.HexCodeJLabel;
-import pl.karolskolasinski.Model.Label.RedCodeJLabel;
-import pl.karolskolasinski.Model.Panel.LeftPanel;
-import pl.karolskolasinski.Model.Panel.ResetPanel;
-import pl.karolskolasinski.Model.Panel.RightPanel;
-import pl.karolskolasinski.Model.TextField.ResultTextField;
+import pl.karolskolasinski.action_listeners.OpenLinkButtonActionListener;
+import pl.karolskolasinski.action_listeners.PlayButtonsActionListener;
+import pl.karolskolasinski.action_listeners.ResetButtonActionListener;
+import pl.karolskolasinski.action_listeners.ResultTextFieldActionListener;
+import pl.karolskolasinski.model.*;
+import pl.karolskolasinski.model.button.ArrowJButtons;
+import pl.karolskolasinski.model.button.OpenLinkJButton;
+import pl.karolskolasinski.model.button.ResetJButton;
+import pl.karolskolasinski.model.frame.ContentJFrame;
+import pl.karolskolasinski.model.label.GreenCodeJLabel;
+import pl.karolskolasinski.model.label.HexCodeJLabel;
+import pl.karolskolasinski.model.label.RedCodeJLabel;
+import pl.karolskolasinski.model.panel.LeftPanel;
+import pl.karolskolasinski.model.panel.ResetPanel;
+import pl.karolskolasinski.model.panel.RightPanel;
+import pl.karolskolasinski.model.text_field.ResultTextField;
 
 import java.awt.*;
 

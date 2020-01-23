@@ -1,6 +1,6 @@
-package pl.karolskolasinski.Model.Panel;
+package pl.karolskolasinski.model.panel;
 
-import pl.karolskolasinski.Model.Frame.ContentJFrame;
+import pl.karolskolasinski.model.frame.ContentJFrame;
 
 import javax.swing.*;
 

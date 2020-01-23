@@ -1,7 +1,7 @@
-package pl.karolskolasinski.Model.Button;
+package pl.karolskolasinski.model.button;
 
-import pl.karolskolasinski.Model.Button.JButtonsSettings.JButtonsSettings;
-import pl.karolskolasinski.Model.Panel.LeftPanel;
+import pl.karolskolasinski.model.button.jbuttons_settings.JButtonsSettings;
+import pl.karolskolasinski.model.panel.LeftPanel;
 
 import javax.swing.*;
 import java.awt.*;

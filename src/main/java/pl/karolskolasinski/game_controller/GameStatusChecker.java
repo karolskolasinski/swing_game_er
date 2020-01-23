@@ -1,8 +1,8 @@
-package pl.karolskolasinski.GameController;
+package pl.karolskolasinski.game_controller;
 
-import pl.karolskolasinski.Model.Button.JButtonsSettings.JButtonsSettings;
-import pl.karolskolasinski.Model.Label.HexCodeJLabel;
-import pl.karolskolasinski.Model.Button.ArrowJButtons;
+import pl.karolskolasinski.model.button.jbuttons_settings.JButtonsSettings;
+import pl.karolskolasinski.model.label.HexCodeJLabel;
+import pl.karolskolasinski.model.button.ArrowJButtons;
 
 public class GameStatusChecker {
     private JButtonsSettings jButtonsSettings = new JButtonsSettings();

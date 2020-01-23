@@ -1,7 +1,7 @@
-package pl.karolskolasinski.Model.TextField;
+package pl.karolskolasinski.model.text_field;
 
-import pl.karolskolasinski.Model.Panel.LeftPanel;
-import pl.karolskolasinski.Model.Panel.ResetPanel;
+import pl.karolskolasinski.model.panel.LeftPanel;
+import pl.karolskolasinski.model.panel.ResetPanel;
 
 import javax.swing.*;
 import java.awt.*;

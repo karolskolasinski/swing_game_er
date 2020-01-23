@@ -1,6 +1,6 @@
-package pl.karolskolasinski.ActionListeners;
+package pl.karolskolasinski.action_listeners;
 
-import pl.karolskolasinski.Model.Button.OpenLinkJButton;
+import pl.karolskolasinski.model.button.OpenLinkJButton;
 
 import java.awt.*;
 import java.net.MalformedURLException;

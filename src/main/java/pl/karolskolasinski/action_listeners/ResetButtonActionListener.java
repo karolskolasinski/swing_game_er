@@ -1,11 +1,11 @@
-package pl.karolskolasinski.ActionListeners;
+package pl.karolskolasinski.action_listeners;
 
-import pl.karolskolasinski.Model.Button.ArrowJButtons;
-import pl.karolskolasinski.Model.Button.JButtonsSettings.JButtonsSettings;
-import pl.karolskolasinski.Model.Button.OpenLinkJButton;
-import pl.karolskolasinski.Model.Button.ResetJButton;
-import pl.karolskolasinski.Model.Label.HexCodeJLabel;
-import pl.karolskolasinski.Model.TextField.ResultTextField;
+import pl.karolskolasinski.model.button.ArrowJButtons;
+import pl.karolskolasinski.model.button.jbuttons_settings.JButtonsSettings;
+import pl.karolskolasinski.model.button.OpenLinkJButton;
+import pl.karolskolasinski.model.button.ResetJButton;
+import pl.karolskolasinski.model.label.HexCodeJLabel;
+import pl.karolskolasinski.model.text_field.ResultTextField;
 
 import java.awt.event.ActionListener;
 
