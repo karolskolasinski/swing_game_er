@@ -1,4 +1,4 @@
-package pl.karolskolasinski.model_factory.frame;
+package pl.karolskolasinski.model_factory;
 
 import javax.swing.*;
 import java.awt.*;
