@@ -1,4 +1,4 @@
-package pl.karolskolasinski.model_factory;
+package pl.karolskolasinski.swing_game_er.model_factory;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,10 +22,9 @@ public class ContentJFrame extends JFrame {
 
         /*setVisible (last!)*/
         this.setVisible(true);
-        setLookAndFeel(this);
     }
 
-    private void setLookAndFeel(JFrame jFrame) {
+    public void setLookAndFeel(JFrame jFrame) {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             SwingUtilities.updateComponentTreeUI(jFrame);

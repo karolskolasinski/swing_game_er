@@ -1,7 +1,6 @@
-package pl.karolskolasinski.action_listeners;
+package pl.karolskolasinski.swing_game_er.action_listener;
 
-import pl.karolskolasinski.model.button.OpenLinkJButton;
-
+import javax.swing.*;
 import java.awt.*;
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -10,8 +9,8 @@ import java.net.URL;
 
 public class OpenLinkButtonActionListener {
 
-    public OpenLinkButtonActionListener(OpenLinkJButton openLinkJButton) {
-        openLinkJButton.getOpenLinkJButton().addActionListener(e -> {
+    public OpenLinkButtonActionListener(JButton openLinkJButton) {
+        openLinkJButton.addActionListener(e -> {
             try {
                 openWebpage(new URL("https://hextoopen.blogspot.com/"));
             } catch (MalformedURLException mURLe) {
@@ -38,5 +37,6 @@ public class OpenLinkButtonActionListener {
             }
         }
     }
+
 }
 
