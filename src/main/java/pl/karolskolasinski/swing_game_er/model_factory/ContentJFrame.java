@@ -1,7 +1,6 @@
 package pl.karolskolasinski.swing_game_er.model_factory;
 
 import pl.karolskolasinski.swing_game_er.model_factory.panels.LeftPanel;
-import pl.karolskolasinski.swing_game_er.model_factory.panels.ResetPanel;
 import pl.karolskolasinski.swing_game_er.model_factory.panels.RightPanel;
 
 import javax.swing.*;
@@ -30,24 +29,9 @@ public class ContentJFrame extends JFrame {
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(this.getClass().getClassLoader().getResource(ICON_PATH)));
         setLayout(new GridLayout());
         /*add panels to JFrame (ContentPane)*/
-        LeftPanel leftPanel = new LeftPanel(WINDOW_HEIGHT);
-
+        LeftPanel leftPanel = new LeftPanel();
         this.getContentPane().add(leftPanel);
-
-
-        JPanel jPanel = new JPanel();
-        jPanel.setBackground(Color.RED);
-        jPanel.setLayout(new BorderLayout());
-
-
-
-        jPanel.add(new ResetPanel(WINDOW_WIDTH, leftPanel), BorderLayout.NORTH);
-        jPanel.add(new RightPanel(WINDOW_WIDTH, WINDOW_HEIGHT, leftPanel), BorderLayout.CENTER);
-
-        this.getContentPane().add(jPanel);
-
-//        this.getContentPane().add(new ResetPanel(WINDOW_WIDTH, leftPanel));
-//        this.getContentPane().add(new RightPanel(WINDOW_WIDTH, WINDOW_HEIGHT, leftPanel));
+        this.getContentPane().add(new RightPanel(leftPanel));
 
         /*set visible (visible last!)*/
         this.setVisible(true);
@@ -61,10 +45,6 @@ public class ContentJFrame extends JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
             System.err.println(e.getMessage());
         }
-    }
-
-    public JFrame getjFrame() {
-        return this;
     }
 
 }

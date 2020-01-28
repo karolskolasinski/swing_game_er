@@ -9,9 +9,9 @@ import pl.karolskolasinski.swing_game_er.model_factory.labels.TextLabel;
 import javax.swing.*;
 import java.awt.*;
 
-public class RightComponentPanel extends JPanel implements IOpenPanel {
+public class CodeComponentPanel extends JPanel implements IOpenPanel {
 
-    RightComponentPanel(LeftPanel leftPanel) {
+    CodeComponentPanel(LeftPanel leftPanel) {
         setLayout(new GridLayout(5, 1, 0, 0));
         setBackground(Color.magenta);
         addAll();

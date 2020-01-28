@@ -5,11 +5,9 @@ import java.awt.*;
 
 public class LeftPanel extends JPanel {
     private final static String PANEL_TITLE = "Play this game";
-    final static int PANEL_WIDTH = 250;
     private LeftButtonsPanel leftButtonsPanel;
 
-    public LeftPanel(int windowHeight) {
-        setBounds(0, 0, PANEL_WIDTH, windowHeight);
+    public LeftPanel() {
         setBorder(BorderFactory.createTitledBorder(PANEL_TITLE));
         createInsidePanel();
     }

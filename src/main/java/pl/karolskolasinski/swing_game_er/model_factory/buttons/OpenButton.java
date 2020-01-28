@@ -1,9 +1,7 @@
 package pl.karolskolasinski.swing_game_er.model_factory.buttons;
 
 import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IOpenPanel;
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IResetPanel;
-import pl.karolskolasinski.swing_game_er.model_factory.panels.ResetButtonPanel;
-import pl.karolskolasinski.swing_game_er.model_factory.panels.RightComponentPanel;
+import pl.karolskolasinski.swing_game_er.model_factory.panels.CodeComponentPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,8 +16,8 @@ public class OpenButton extends JButton implements ActionListener {
     private static final Dimension ARROW_DIMENSION = new Dimension(ARROW_BUTTON_SIZE_HORIZONTAL, ARROW_BUTTON_SIZE_VERTICAL);
     private IOpenPanel openPanel;
 
-    public OpenButton(RightComponentPanel rightComponentPanel) {
-        this.openPanel = rightComponentPanel;
+    public OpenButton(CodeComponentPanel codeComponentPanel) {
+        this.openPanel = codeComponentPanel;
         setText(RESET_TEXT);
         setFont(FONT);
         setFocusable(false);

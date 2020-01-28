@@ -7,8 +7,7 @@ public class ResetPanel extends JPanel {
     private final static String PANEL_TITLE = "Reset";
     final static int PANEL_HEIGHT = 120;
 
-    public ResetPanel(int windowWidth, LeftPanel leftPanel) {
-        setBounds(LeftPanel.PANEL_WIDTH, 0, windowWidth - LeftPanel.PANEL_WIDTH, PANEL_HEIGHT);
+    public ResetPanel(LeftPanel leftPanel) {
         setBorder(BorderFactory.createTitledBorder(PANEL_TITLE));
         createInsidePanel(leftPanel);
         setLayout(new GridBagLayout());
