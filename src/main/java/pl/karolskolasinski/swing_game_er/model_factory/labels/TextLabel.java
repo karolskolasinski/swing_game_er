@@ -1,12 +1,7 @@
 package pl.karolskolasinski.swing_game_er.model_factory.labels;
 
-import pl.karolskolasinski.swing_game_er.model_factory.buttons.ButtonType;
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IPlayPanel;
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class TextLabel extends JLabel {
     private static final String HEX = "<html><span style='font-family: monospace;'>#HEX</span></html>";
@@ -16,8 +11,8 @@ public class TextLabel extends JLabel {
     private static final Font FONT = new Font(Font.SANS_SERIF, Font.PLAIN, 26);
 
 
-    private static final int ARROW_BUTTON_SIZE_VERTICAL = 50;
-    private static final int ARROW_BUTTON_SIZE_HORIZONTAL = 70;
+    private static final int ARROW_BUTTON_SIZE_VERTICAL = 35;
+    private static final int ARROW_BUTTON_SIZE_HORIZONTAL = 150;
     private static final Dimension ARROW_DIMENSION = new Dimension(ARROW_BUTTON_SIZE_HORIZONTAL, ARROW_BUTTON_SIZE_VERTICAL);
 
 
@@ -30,14 +25,13 @@ public class TextLabel extends JLabel {
             setText(GREEN);
         }
 
-        setBorder(null);
-//        setBounds(0,0,50,20);
-//        setHorizontalAlignment(RIGHT);
-        setBackground(Color.cyan);
-        setOpaque(true);
+        setHorizontalAlignment(RIGHT);
         setForeground(COLOR);
         setFont(FONT);
         setPreferredSize(ARROW_DIMENSION);
+
+        setBackground(Color.cyan);  //todo delete
+        setOpaque(true);            //todo delete
     }
 
 }
