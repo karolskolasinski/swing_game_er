@@ -1,7 +1,6 @@
 package pl.karolskolasinski.swing_game_er.model_factory.panels;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class LeftPanel extends JPanel {
     private final static String PANEL_TITLE = "Play this game";
@@ -17,7 +16,7 @@ public class LeftPanel extends JPanel {
         add(leftButtonsPanel);
     }
 
-    LeftButtonsPanel getLeftButtonsPanel() {
+    public LeftButtonsPanel getLeftButtonsPanel() {
         return leftButtonsPanel;
     }
 

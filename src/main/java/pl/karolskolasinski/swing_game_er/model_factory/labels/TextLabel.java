@@ -16,8 +16,8 @@ public class TextLabel extends JLabel {
     private static final Font FONT = new Font(Font.SANS_SERIF, Font.PLAIN, 26);
 
 
-    private static final int ARROW_BUTTON_SIZE_VERTICAL = 60;
-    private static final int ARROW_BUTTON_SIZE_HORIZONTAL = 60;
+    private static final int ARROW_BUTTON_SIZE_VERTICAL = 50;
+    private static final int ARROW_BUTTON_SIZE_HORIZONTAL = 70;
     private static final Dimension ARROW_DIMENSION = new Dimension(ARROW_BUTTON_SIZE_HORIZONTAL, ARROW_BUTTON_SIZE_VERTICAL);
 
 
@@ -31,11 +31,13 @@ public class TextLabel extends JLabel {
         }
 
         setBorder(null);
-//        setBounds(x, y, width, height);
+//        setBounds(0,0,50,20);
 //        setHorizontalAlignment(RIGHT);
+        setBackground(Color.cyan);
+        setOpaque(true);
         setForeground(COLOR);
         setFont(FONT);
-//        setPreferredSize(ARROW_DIMENSION);
+        setPreferredSize(ARROW_DIMENSION);
     }
 
 }

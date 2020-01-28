@@ -1,6 +1,5 @@
 package pl.karolskolasinski.swing_game_er.model_factory.panels;
 
-import pl.karolskolasinski.swing_game_er.model_factory.buttons.ButtonType;
 import pl.karolskolasinski.swing_game_er.model_factory.buttons.OpenButton;
 import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IOpenPanel;
 import pl.karolskolasinski.swing_game_er.model_factory.labels.LabelType;
@@ -11,9 +10,8 @@ import java.awt.*;
 
 public class CodeComponentPanel extends JPanel implements IOpenPanel {
 
-    CodeComponentPanel(LeftPanel leftPanel) {
+    CodeComponentPanel(LeftButtonsPanel leftButtonsPanel) {
         setLayout(new GridLayout(5, 1, 0, 0));
-        setBackground(Color.magenta);
         addAll();
     }
 
@@ -35,8 +33,6 @@ public class CodeComponentPanel extends JPanel implements IOpenPanel {
     private JLabel createGreenCodeLabel() {
         return new TextLabel(LabelType.GREEN);
     }
-
-
 
 //    private OpenButton createOpenButton() {
 //        return new OpenButton(this, ButtonType.OPEN);

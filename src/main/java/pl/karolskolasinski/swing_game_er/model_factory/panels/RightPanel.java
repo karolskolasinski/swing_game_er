@@ -5,19 +5,18 @@ import java.awt.*;
 
 public class RightPanel extends JPanel {
 
-    public RightPanel(LeftPanel leftPanel) {
+    public RightPanel(LeftButtonsPanel leftButtonsPanel) {
         setLayout(new BorderLayout());
-        createResetPanel(leftPanel);
-        createCodePanel(leftPanel);
+        createResetPanel(leftButtonsPanel);
+        createCodePanel(leftButtonsPanel);
     }
 
-    private void createResetPanel(LeftPanel leftPanel) {
-        add(new ResetPanel(leftPanel), BorderLayout.NORTH);
+    private void createResetPanel(LeftButtonsPanel leftButtonsPanel) {
+        add(new ResetPanel(leftButtonsPanel), BorderLayout.NORTH);
     }
 
-    private void createCodePanel(LeftPanel leftPanel) {
-        add(new CodePanel(leftPanel), BorderLayout.CENTER);
+    private void createCodePanel(LeftButtonsPanel leftButtonsPanel) {
+        add(new CodePanel(leftButtonsPanel), BorderLayout.CENTER);
     }
-
 
 }
