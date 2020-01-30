@@ -9,11 +9,9 @@ public class TextLabel extends JLabel {
     private static final String GREEN = "<html><span style='font-family: monospace;'>-5x</span><span style='font-size: 15px; color: rgb(0, 255, 0);'>\uD83D\uDD3A</span></html>";
     private static final Color COLOR = Color.DARK_GRAY;
     private static final Font FONT = new Font(Font.SANS_SERIF, Font.PLAIN, 26);
-
-
-    private static final int ARROW_BUTTON_SIZE_VERTICAL = 35;
-    private static final int ARROW_BUTTON_SIZE_HORIZONTAL = 150;
-    private static final Dimension ARROW_DIMENSION = new Dimension(ARROW_BUTTON_SIZE_HORIZONTAL, ARROW_BUTTON_SIZE_VERTICAL);
+    private static final int LABEL_SIZE_VERTICAL = 35;
+    private static final int LABEL_SIZE_HORIZONTAL = 150;
+    private static final Dimension LABEL_DIMENSION = new Dimension(LABEL_SIZE_HORIZONTAL, LABEL_SIZE_VERTICAL);
 
 
     public TextLabel(LabelType labelType) {
@@ -28,11 +26,7 @@ public class TextLabel extends JLabel {
         setHorizontalAlignment(RIGHT);
         setForeground(COLOR);
         setFont(FONT);
-        setPreferredSize(ARROW_DIMENSION);
-
-        setBackground(Color.cyan);  //todo delete
-        setOpaque(true);            //todo delete
+        setPreferredSize(LABEL_DIMENSION);
     }
 
 }
-
