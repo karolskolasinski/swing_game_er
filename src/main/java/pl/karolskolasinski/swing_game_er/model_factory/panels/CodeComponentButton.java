@@ -1,7 +1,8 @@
 package pl.karolskolasinski.swing_game_er.model_factory.panels;
 
 import pl.karolskolasinski.swing_game_er.model_factory.buttons.OpenButton;
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IOpenPanel;
+import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IOpenButton;
+import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IGameStatusChecker;
 import pl.karolskolasinski.swing_game_er.model_factory.labels.LabelType;
 import pl.karolskolasinski.swing_game_er.model_factory.labels.TextLabel;
 import pl.karolskolasinski.swing_game_er.model_factory.text_fields.ResultTextField;
@@ -9,11 +10,14 @@ import pl.karolskolasinski.swing_game_er.model_factory.text_fields.ResultTextFie
 import javax.swing.*;
 import java.awt.*;
 
-public class CodeComponentPanel extends JPanel implements IOpenPanel {
+public class CodeComponentButton extends JPanel implements IOpenButton, IGameStatusChecker {
+    private ResultTextField resultTextField;
+    private OpenButton openButton;
 
-    CodeComponentPanel(LeftButtonsPanel leftButtonsPanel) {
+    CodeComponentButton(LeftButtonsPanel leftButtonsPanel) {
         setLayout(new GridLayout(5, 1, 0, 0));
         addAll();
+
     }
 
     private void addAll() {
@@ -21,29 +25,34 @@ public class CodeComponentPanel extends JPanel implements IOpenPanel {
         add(createRedCodeLabel());
         add(createGreenCodeLabel());
         add(createResultTextField());
-//        add(createOpenButton());
+        add(createOpenButton());
     }
 
-    private JTextField createResultTextField() {
+    private ResultTextField createResultTextField() {
         return new ResultTextField();
     }
 
-    private JLabel createHexCodeLabel() {
+    private TextLabel createHexCodeLabel() {
         return new TextLabel(LabelType.HEX);
     }
 
-    private JLabel createRedCodeLabel() {
+    private TextLabel createRedCodeLabel() {
         return new TextLabel(LabelType.RED);
     }
 
-    private JLabel createGreenCodeLabel() {
+    private TextLabel createGreenCodeLabel() {
         return new TextLabel(LabelType.GREEN);
     }
 
-//    private OpenButton createOpenButton() {
-//        return new OpenButton(this, ButtonType.OPEN);
-//    }
+    private OpenButton createOpenButton() {
+        return new OpenButton(this);
+    }
 
+
+    @Override
+    public void checkCode(String code) {
+
+    }
 
     @Override
     public void openLink(OpenButton openButton) {

@@ -15,7 +15,7 @@ class CodePanel extends JPanel {
     }
 
     private void createInsidePanel() {
-        add(new CodeComponentPanel(leftButtonsPanel));
+        add(new CodeComponentButton(leftButtonsPanel));
     }
 
 }
