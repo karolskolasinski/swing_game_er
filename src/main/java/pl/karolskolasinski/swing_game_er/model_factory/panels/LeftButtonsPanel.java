@@ -2,6 +2,7 @@ package pl.karolskolasinski.swing_game_er.model_factory.panels;
 
 import pl.karolskolasinski.swing_game_er.model_factory.buttons.ArrowButton;
 import pl.karolskolasinski.swing_game_er.model_factory.buttons.ButtonType;
+import pl.karolskolasinski.swing_game_er.model_factory.game_controller.GameStatusDispatcher;
 import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IPlayPanel;
 
 import javax.swing.*;
@@ -9,6 +10,7 @@ import java.awt.*;
 
 public class LeftButtonsPanel extends JPanel implements IPlayPanel {
     private ArrowButton[] arrowButtons = new ArrowButton[7];
+    private GameStatusDispatcher gameStatusDispatcher = new GameStatusDispatcher();
 
     LeftButtonsPanel() {
         setLayout(new GridLayout(7, 1, 0, 1));
@@ -91,6 +93,10 @@ public class LeftButtonsPanel extends JPanel implements IPlayPanel {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.err.println(e.getMessage());
         }
+        gameStatusDispatcher.checkIsCorrect(getArrowButtons());
     }
 
+    private ArrowButton[] getArrowButtons() {
+        return arrowButtons;
+    }
 }

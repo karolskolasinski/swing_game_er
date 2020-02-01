@@ -1,6 +1,9 @@
 package pl.karolskolasinski.swing_game_er.model_factory.panels;
 
+import pl.karolskolasinski.swing_game_er.model_factory.buttons.ArrowButton;
 import pl.karolskolasinski.swing_game_er.model_factory.buttons.OpenButton;
+import pl.karolskolasinski.swing_game_er.model_factory.game_controller.GameStatusDispatcher;
+import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IObserver;
 import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IOpenButton;
 import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IGameStatusChecker;
 import pl.karolskolasinski.swing_game_er.model_factory.labels.LabelType;
@@ -10,14 +13,15 @@ import pl.karolskolasinski.swing_game_er.model_factory.text_fields.ResultTextFie
 import javax.swing.*;
 import java.awt.*;
 
-public class CodeComponentButton extends JPanel implements IOpenButton, IGameStatusChecker {
+public class CodeComponentsPanel extends JPanel implements IOpenButton, IGameStatusChecker, IObserver {
     private ResultTextField resultTextField;
     private OpenButton openButton;
+    private TextLabel textLabel;
 
-    CodeComponentButton(LeftButtonsPanel leftButtonsPanel) {
+    CodeComponentsPanel(LeftButtonsPanel leftButtonsPanel) {
         setLayout(new GridLayout(5, 1, 0, 0));
         addAll();
-
+        GameStatusDispatcher.resiterObserver(this);
     }
 
     private void addAll() {
@@ -33,7 +37,8 @@ public class CodeComponentButton extends JPanel implements IOpenButton, IGameSta
     }
 
     private TextLabel createHexCodeLabel() {
-        return new TextLabel(LabelType.HEX);
+        this.textLabel = new TextLabel(LabelType.HEX);
+        return textLabel;
     }
 
     private TextLabel createRedCodeLabel() {
@@ -50,6 +55,11 @@ public class CodeComponentButton extends JPanel implements IOpenButton, IGameSta
 
 
     @Override
+    public void checkIsCorrect(ArrowButton[] arrowButtons) {
+
+    }
+
+    @Override
     public void checkCode(String code) {
 
     }
@@ -58,5 +68,13 @@ public class CodeComponentButton extends JPanel implements IOpenButton, IGameSta
     public void openLink(OpenButton openButton) {
 
     }
+
+    @Override
+    public void receiveNotification() {
+        textLabel.setText("<html><span style='font-family: monospace;'>#CCCCCC</span></html>");
+        textLabel.revalidate();
+        textLabel.repaint();
+    }
+
 }
 

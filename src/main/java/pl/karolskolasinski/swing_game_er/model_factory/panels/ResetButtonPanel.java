@@ -19,11 +19,12 @@ public class ResetButtonPanel extends JPanel implements IResetPanel {
     }
 
     @Override
-    public void reset(ResetButton resetButton) {
+    public void reset() {
         leftButtonsPanel.addButtonsToArray();
         leftButtonsPanel.addAll();
         leftButtonsPanel.revalidate();
         leftButtonsPanel.repaint();
+
     }
 
 }

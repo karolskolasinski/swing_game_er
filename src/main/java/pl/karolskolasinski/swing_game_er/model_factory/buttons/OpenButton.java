@@ -1,7 +1,7 @@
 package pl.karolskolasinski.swing_game_er.model_factory.buttons;
 
 import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IOpenButton;
-import pl.karolskolasinski.swing_game_er.model_factory.panels.CodeComponentButton;
+import pl.karolskolasinski.swing_game_er.model_factory.panels.CodeComponentsPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,7 +17,7 @@ public class OpenButton extends JButton implements ActionListener {
     private IOpenButton openPanel;
     private boolean isVisible = false;
 
-    public OpenButton(CodeComponentButton codeComponentPanel) {
+    public OpenButton(CodeComponentsPanel codeComponentPanel) {
         this.openPanel = codeComponentPanel;
         setText(RESET_TEXT);
         setFont(FONT);
