@@ -1,12 +1,7 @@
 package pl.karolskolasinski.swing_game_er;
 
-import pl.karolskolasinski.swing_game_er.action_listener.PlayButtonsActionListener;
-import pl.karolskolasinski.swing_game_er.action_listener.ResultTextFieldActionListener;
-import pl.karolskolasinski.swing_game_er.action_listener.OpenLinkButtonActionListener;
-import pl.karolskolasinski.swing_game_er.action_listener.ResetButtonActionListener;
-import pl.karolskolasinski.swing_game_er.model_factory.*;
+import pl.karolskolasinski.swing_game_er.model_factory.core_frame.ContentJFrame;
 
-import javax.swing.*;
 import java.awt.*;
 
 public class Game {

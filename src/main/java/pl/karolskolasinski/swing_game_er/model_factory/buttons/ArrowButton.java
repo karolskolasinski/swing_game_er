@@ -26,7 +26,6 @@ public class ArrowButton extends JButton implements ActionListener {
     public ArrowButton(IPlayPanel playPanel, ButtonType buttonType) {
         this.playPanel = playPanel;
         this.buttonType = buttonType;
-
         if (buttonType == ButtonType.DOWN) {
             setText(DOWN_TEXT);
             setForeground(DOWN_COLOR);
@@ -36,7 +35,6 @@ public class ArrowButton extends JButton implements ActionListener {
         } else if (buttonType == ButtonType.NONE) {
             setEnabled(false);
         }
-
         setFont(FONT);
         setFocusable(false);
         setRolloverEnabled(false);
@@ -48,10 +46,8 @@ public class ArrowButton extends JButton implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (buttonType == ButtonType.DOWN) {
             playPanel.moveDown(this);
-//            GameStatusChecker.checkGameStatus(arrowJButtons, hexCodeJLabel);
         } else if (buttonType == ButtonType.UP) {
             playPanel.moveUp(this);
-//            GameStatusChecker.checkGameStatus(arrowJButtons, hexCodeJLabel);
         }
     }
 

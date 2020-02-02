@@ -6,5 +6,4 @@ public interface IGameStatusChecker {
 
     void checkIsCorrect(ArrowButton[] arrowButtons);
 
-    void checkCode(String code);
 }

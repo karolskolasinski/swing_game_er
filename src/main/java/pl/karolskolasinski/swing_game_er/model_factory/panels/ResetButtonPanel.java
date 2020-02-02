@@ -29,6 +29,8 @@ public class ResetButtonPanel extends JPanel implements IResetPanel {
         hexLabel.setText(TextLabel.getHexBefore());
         hexLabel.revalidate();
         hexLabel.repaint();
+        resultTextField.reset();
+
     }
 
 }

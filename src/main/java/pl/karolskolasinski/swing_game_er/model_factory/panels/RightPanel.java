@@ -9,13 +9,13 @@ public class RightPanel extends JPanel {
 
     public RightPanel(LeftButtonsPanel leftButtonsPanel) {
         setLayout(new BorderLayout());
-        CodePanel codePanel = createCodePanel(leftButtonsPanel);
+        CodePanel codePanel = createCodePanel();
         TextLabel hexLabel = codePanel.getCodeComponentsPanel().getHexLabel();
         createResetPanel(leftButtonsPanel, hexLabel);
     }
 
-    private CodePanel createCodePanel(LeftButtonsPanel leftButtonsPanel) {
-        CodePanel codePanel = new CodePanel(leftButtonsPanel);
+    private CodePanel createCodePanel() {
+        CodePanel codePanel = new CodePanel();
         add(codePanel, BorderLayout.CENTER);
         return codePanel;
     }

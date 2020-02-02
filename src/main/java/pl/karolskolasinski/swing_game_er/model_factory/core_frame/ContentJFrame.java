@@ -1,4 +1,4 @@
-package pl.karolskolasinski.swing_game_er.model_factory;
+package pl.karolskolasinski.swing_game_er.model_factory.core_frame;
 
 import pl.karolskolasinski.swing_game_er.model_factory.panels.LeftPanel;
 import pl.karolskolasinski.swing_game_er.model_factory.panels.RightPanel;

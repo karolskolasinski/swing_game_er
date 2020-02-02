@@ -1,11 +1,8 @@
 package pl.karolskolasinski.swing_game_er.model_factory.panels;
 
-import pl.karolskolasinski.swing_game_er.model_factory.buttons.ArrowButton;
 import pl.karolskolasinski.swing_game_er.model_factory.buttons.OpenButton;
 import pl.karolskolasinski.swing_game_er.model_factory.game_controller.GameStatusDispatcher;
 import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IObserver;
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IOpenButton;
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IGameStatusChecker;
 import pl.karolskolasinski.swing_game_er.model_factory.labels.LabelType;
 import pl.karolskolasinski.swing_game_er.model_factory.labels.TextLabel;
 import pl.karolskolasinski.swing_game_er.model_factory.text_fields.ResultTextField;
@@ -13,15 +10,14 @@ import pl.karolskolasinski.swing_game_er.model_factory.text_fields.ResultTextFie
 import javax.swing.*;
 import java.awt.*;
 
-public class CodeComponentsPanel extends JPanel implements IOpenButton, IGameStatusChecker, IObserver {
-    private ResultTextField resultTextField;
+public class CodeComponentsPanel extends JPanel implements IObserver {
     private OpenButton openButton;
     private TextLabel hexLabel;
 
-    CodeComponentsPanel(LeftButtonsPanel leftButtonsPanel) {
+    CodeComponentsPanel() {
         setLayout(new GridLayout(5, 1, 0, 0));
         addAll();
-        GameStatusDispatcher.resiterObserver(this);
+        GameStatusDispatcher.registerObserver(this);
     }
 
     private void addAll() {
@@ -30,10 +26,6 @@ public class CodeComponentsPanel extends JPanel implements IOpenButton, IGameSta
         add(createGreenCodeLabel());
         add(createResultTextField());
         add(createOpenButton());
-    }
-
-    private ResultTextField createResultTextField() {
-        return new ResultTextField();
     }
 
     private TextLabel createHexCodeLabel() {
@@ -49,24 +41,13 @@ public class CodeComponentsPanel extends JPanel implements IOpenButton, IGameSta
         return new TextLabel(LabelType.GREEN);
     }
 
+    private ResultTextField createResultTextField() {
+        return new ResultTextField(this);
+    }
+
     private OpenButton createOpenButton() {
-        return new OpenButton(this);
-    }
-
-
-    @Override
-    public void checkIsCorrect(ArrowButton[] arrowButtons) {
-
-    }
-
-    @Override
-    public void checkCode(String code) {
-
-    }
-
-    @Override
-    public void openLink(OpenButton openButton) {
-
+        this.openButton = new OpenButton();
+        return openButton;
     }
 
     @Override
@@ -76,8 +57,15 @@ public class CodeComponentsPanel extends JPanel implements IOpenButton, IGameSta
         hexLabel.repaint();
     }
 
+    public void changeOpenButtonVisibility(boolean isVisible) {
+        openButton.setVisible(isVisible);
+        openButton.revalidate();
+        openButton.repaint();
+    }
+
     TextLabel getHexLabel() {
         return hexLabel;
     }
+
 }
 

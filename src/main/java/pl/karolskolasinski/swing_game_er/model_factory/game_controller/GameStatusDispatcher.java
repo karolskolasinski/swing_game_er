@@ -11,7 +11,7 @@ import java.util.List;
 public class GameStatusDispatcher implements IGameStatusChecker {
     private static List<IObserver> observers = new ArrayList<>();
 
-    public static void resiterObserver(IObserver iObserver) {
+    public static void registerObserver(IObserver iObserver) {
         observers.add(iObserver);
     }
 
@@ -31,8 +31,4 @@ public class GameStatusDispatcher implements IGameStatusChecker {
         }
     }
 
-    @Override
-    public void checkCode(String code) {
-
-    }
 }
