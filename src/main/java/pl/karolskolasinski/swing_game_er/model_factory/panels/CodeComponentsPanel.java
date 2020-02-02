@@ -13,6 +13,7 @@ import java.awt.*;
 public class CodeComponentsPanel extends JPanel implements IObserver {
     private OpenButton openButton;
     private TextLabel hexLabel;
+    private ResultTextField resultTextField;
 
     CodeComponentsPanel() {
         setLayout(new GridLayout(5, 1, 0, 0));
@@ -42,7 +43,8 @@ public class CodeComponentsPanel extends JPanel implements IObserver {
     }
 
     private ResultTextField createResultTextField() {
-        return new ResultTextField(this);
+        resultTextField = new ResultTextField(this);
+        return resultTextField;
     }
 
     private OpenButton createOpenButton() {
@@ -67,5 +69,8 @@ public class CodeComponentsPanel extends JPanel implements IObserver {
         return hexLabel;
     }
 
+    public ResultTextField getResultTextField() {
+        return resultTextField;
+    }
 }
 

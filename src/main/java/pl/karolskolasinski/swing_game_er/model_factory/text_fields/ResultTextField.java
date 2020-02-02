@@ -40,4 +40,7 @@ public class ResultTextField extends JTextField {
         return this.getText();
     }
 
+    public void reset() {
+        this.setText("");
+    }
 }
