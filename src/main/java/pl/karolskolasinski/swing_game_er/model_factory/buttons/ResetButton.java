@@ -29,6 +29,5 @@ public class ResetButton extends JButton implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         resetPanel.reset();
-//            GameStatusChecker.checkGameStatus(arrowJButtons, hexCodeJLabel);
     }
 }

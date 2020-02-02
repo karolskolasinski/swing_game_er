@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class TextLabel extends JLabel {
-    private static final String HEX = "<html><span style='font-family: monospace;'>#HEX</span></html>";
+    private static final String HEX_BEFORE = "<html><span style='font-family: monospace;'>#HEX</span></html>";
+    private static final String HEX_AFTER = "<html><span style='font-family: monospace;'>#CCCCCC</span></html>";
     private static final String RED = "<html><span style='font-family: monospace;'>+3x</span><span style='font-size: 15px; color: red;'>\uD83D\uDD3B</span></html>";
     private static final String GREEN = "<html><span style='font-family: monospace;'>-5x</span><span style='font-size: 15px; color: rgb(0, 255, 0);'>\uD83D\uDD3A</span></html>";
     private static final Color COLOR = Color.DARK_GRAY;
@@ -15,7 +16,7 @@ public class TextLabel extends JLabel {
 
     public TextLabel(LabelType labelType) {
         if (labelType == LabelType.HEX) {
-            setText(HEX);
+            setText(HEX_BEFORE);
         } else if (labelType == LabelType.RED) {
             setText(RED);
         } else if (labelType == LabelType.GREEN) {
@@ -27,4 +28,11 @@ public class TextLabel extends JLabel {
         setPreferredSize(LABEL_DIMENSION);
     }
 
+    public static String getHexAfter() {
+        return HEX_AFTER;
+    }
+
+    public static String getHexBefore() {
+        return HEX_BEFORE;
+    }
 }

@@ -16,7 +16,7 @@ import java.awt.*;
 public class CodeComponentsPanel extends JPanel implements IOpenButton, IGameStatusChecker, IObserver {
     private ResultTextField resultTextField;
     private OpenButton openButton;
-    private TextLabel textLabel;
+    private TextLabel hexLabel;
 
     CodeComponentsPanel(LeftButtonsPanel leftButtonsPanel) {
         setLayout(new GridLayout(5, 1, 0, 0));
@@ -37,8 +37,8 @@ public class CodeComponentsPanel extends JPanel implements IOpenButton, IGameSta
     }
 
     private TextLabel createHexCodeLabel() {
-        this.textLabel = new TextLabel(LabelType.HEX);
-        return textLabel;
+        hexLabel = new TextLabel(LabelType.HEX);
+        return hexLabel;
     }
 
     private TextLabel createRedCodeLabel() {
@@ -70,11 +70,14 @@ public class CodeComponentsPanel extends JPanel implements IOpenButton, IGameSta
     }
 
     @Override
-    public void receiveNotification() {
-        textLabel.setText("<html><span style='font-family: monospace;'>#CCCCCC</span></html>");
-        textLabel.revalidate();
-        textLabel.repaint();
+    public void receiveNotificationAboutArrows() {
+        hexLabel.setText(TextLabel.getHexAfter());
+        hexLabel.revalidate();
+        hexLabel.repaint();
     }
 
+    TextLabel getHexLabel() {
+        return hexLabel;
+    }
 }
 

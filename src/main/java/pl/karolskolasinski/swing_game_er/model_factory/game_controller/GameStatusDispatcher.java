@@ -16,7 +16,7 @@ public class GameStatusDispatcher implements IGameStatusChecker {
     }
 
     private void notifyObserversAboutArrowsAreCorrect() {
-        observers.forEach(IObserver::receiveNotification);
+        observers.forEach(IObserver::receiveNotificationAboutArrows);
     }
 
     @Override

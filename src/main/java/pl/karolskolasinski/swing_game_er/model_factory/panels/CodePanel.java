@@ -6,6 +6,7 @@ import java.awt.*;
 class CodePanel extends JPanel {
     private final static String PANEL_TITLE = "Get the code";
     private LeftButtonsPanel leftButtonsPanel;
+    private CodeComponentsPanel codeComponentsPanel;
 
     CodePanel(LeftButtonsPanel leftButtonsPanel) {
         setLayout(new GridBagLayout());
@@ -15,7 +16,11 @@ class CodePanel extends JPanel {
     }
 
     private void createInsidePanel() {
-        add(new CodeComponentsPanel(leftButtonsPanel));
+        codeComponentsPanel = new CodeComponentsPanel(leftButtonsPanel);
+        add(codeComponentsPanel);
     }
 
+    CodeComponentsPanel getCodeComponentsPanel() {
+        return codeComponentsPanel;
+    }
 }

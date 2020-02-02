@@ -1,5 +1,7 @@
 package pl.karolskolasinski.swing_game_er.model_factory.panels;
 
+import pl.karolskolasinski.swing_game_er.model_factory.labels.TextLabel;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -7,16 +9,19 @@ public class RightPanel extends JPanel {
 
     public RightPanel(LeftButtonsPanel leftButtonsPanel) {
         setLayout(new BorderLayout());
-        createResetPanel(leftButtonsPanel);
-        createCodePanel(leftButtonsPanel);
+        CodePanel codePanel = createCodePanel(leftButtonsPanel);
+        TextLabel hexLabel = codePanel.getCodeComponentsPanel().getHexLabel();
+        createResetPanel(leftButtonsPanel, hexLabel);
     }
 
-    private void createResetPanel(LeftButtonsPanel leftButtonsPanel) {
-        add(new ResetPanel(leftButtonsPanel), BorderLayout.NORTH);
+    private CodePanel createCodePanel(LeftButtonsPanel leftButtonsPanel) {
+        CodePanel codePanel = new CodePanel(leftButtonsPanel);
+        add(codePanel, BorderLayout.CENTER);
+        return codePanel;
     }
 
-    private void createCodePanel(LeftButtonsPanel leftButtonsPanel) {
-        add(new CodePanel(leftButtonsPanel), BorderLayout.CENTER);
+    private void createResetPanel(LeftButtonsPanel leftButtonsPanel, TextLabel hexLabel) {
+        add(new ResetPanel(leftButtonsPanel, hexLabel), BorderLayout.NORTH);
     }
 
 }
