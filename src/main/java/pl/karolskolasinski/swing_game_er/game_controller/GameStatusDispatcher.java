@@ -1,9 +1,9 @@
-package pl.karolskolasinski.swing_game_er.model_factory.game_controller;
+package pl.karolskolasinski.swing_game_er.game_controller;
 
-import pl.karolskolasinski.swing_game_er.model_factory.buttons.ArrowButton;
-import pl.karolskolasinski.swing_game_er.model_factory.buttons.ButtonType;
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IGameStatusChecker;
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IObserver;
+import pl.karolskolasinski.swing_game_er.buttons.ArrowButton;
+import pl.karolskolasinski.swing_game_er.buttons.ButtonType;
+import pl.karolskolasinski.swing_game_er.interfaces.IGameStatusChecker;
+import pl.karolskolasinski.swing_game_er.interfaces.IObserver;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package pl.karolskolasinski.swing_game_er.model_factory.text_fields;
+package pl.karolskolasinski.swing_game_er.text_fields;
 
 import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;

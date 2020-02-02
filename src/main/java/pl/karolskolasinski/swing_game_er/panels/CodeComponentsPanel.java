@@ -1,11 +1,11 @@
-package pl.karolskolasinski.swing_game_er.model_factory.panels;
+package pl.karolskolasinski.swing_game_er.panels;
 
-import pl.karolskolasinski.swing_game_er.model_factory.buttons.OpenButton;
-import pl.karolskolasinski.swing_game_er.model_factory.game_controller.GameStatusDispatcher;
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IObserver;
-import pl.karolskolasinski.swing_game_er.model_factory.labels.LabelType;
-import pl.karolskolasinski.swing_game_er.model_factory.labels.TextLabel;
-import pl.karolskolasinski.swing_game_er.model_factory.text_fields.ResultTextField;
+import pl.karolskolasinski.swing_game_er.buttons.OpenButton;
+import pl.karolskolasinski.swing_game_er.game_controller.GameStatusDispatcher;
+import pl.karolskolasinski.swing_game_er.interfaces.IObserver;
+import pl.karolskolasinski.swing_game_er.labels.LabelType;
+import pl.karolskolasinski.swing_game_er.labels.TextLabel;
+import pl.karolskolasinski.swing_game_er.text_fields.ResultTextField;
 
 import javax.swing.*;
 import java.awt.*;
@@ -69,8 +69,13 @@ public class CodeComponentsPanel extends JPanel implements IObserver {
         return hexLabel;
     }
 
-    public ResultTextField getResultTextField() {
+    ResultTextField getResultTextField() {
         return resultTextField;
     }
+
+    public OpenButton getOpenButton() {
+        return openButton;
+    }
+
 }
 

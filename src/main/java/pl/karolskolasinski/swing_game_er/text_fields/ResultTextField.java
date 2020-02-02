@@ -1,6 +1,6 @@
-package pl.karolskolasinski.swing_game_er.model_factory.text_fields;
+package pl.karolskolasinski.swing_game_er.text_fields;
 
-import pl.karolskolasinski.swing_game_er.model_factory.panels.CodeComponentsPanel;
+import pl.karolskolasinski.swing_game_er.panels.CodeComponentsPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,6 +8,7 @@ import java.awt.event.*;
 
 public class ResultTextField extends JTextField {
     private static final String RESULT = Integer.toHexString(0xcccccc + 3 * 0xFF0000 - 5 * 0x00FF00).toUpperCase();
+    private static final String RESET_TEXT = "";
     private static final Font FONT = new Font(Font.SANS_SERIF, Font.PLAIN, 20);
     private static final int TEXTFIELD_SIZE_VERTICAL = 35;
     private static final int TEXTFIELD_SIZE_HORIZONTAL = 150;
@@ -41,6 +42,7 @@ public class ResultTextField extends JTextField {
     }
 
     public void reset() {
-        this.setText("");
+        this.setText(RESET_TEXT);
     }
+
 }

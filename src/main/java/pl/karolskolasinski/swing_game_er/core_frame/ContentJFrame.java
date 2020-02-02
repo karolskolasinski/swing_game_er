@@ -1,7 +1,7 @@
-package pl.karolskolasinski.swing_game_er.model_factory.core_frame;
+package pl.karolskolasinski.swing_game_er.core_frame;
 
-import pl.karolskolasinski.swing_game_er.model_factory.panels.LeftPanel;
-import pl.karolskolasinski.swing_game_er.model_factory.panels.RightPanel;
+import pl.karolskolasinski.swing_game_er.panels.LeftPanel;
+import pl.karolskolasinski.swing_game_er.panels.RightPanel;
 
 import javax.swing.*;
 import java.awt.*;

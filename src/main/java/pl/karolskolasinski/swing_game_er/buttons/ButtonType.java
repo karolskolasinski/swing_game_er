@@ -1,4 +1,4 @@
-package pl.karolskolasinski.swing_game_er.model_factory.buttons;
+package pl.karolskolasinski.swing_game_er.buttons;
 
 public enum ButtonType {
     DOWN,

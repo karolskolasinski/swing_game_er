@@ -1,7 +1,7 @@
-package pl.karolskolasinski.swing_game_er.model_factory.buttons;
+package pl.karolskolasinski.swing_game_er.buttons;
 
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IResetPanel;
-import pl.karolskolasinski.swing_game_er.model_factory.panels.ResetButtonPanel;
+import pl.karolskolasinski.swing_game_er.interfaces.IResetPanel;
+import pl.karolskolasinski.swing_game_er.panels.ResetButtonPanel;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,6 +1,6 @@
-package pl.karolskolasinski.swing_game_er.model_factory.buttons;
+package pl.karolskolasinski.swing_game_er.buttons;
 
-import pl.karolskolasinski.swing_game_er.model_factory.interfaces.IPlayPanel;
+import pl.karolskolasinski.swing_game_er.interfaces.IPlayPanel;
 
 import javax.swing.*;
 import java.awt.*;
