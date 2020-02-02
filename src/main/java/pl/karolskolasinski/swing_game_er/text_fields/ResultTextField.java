@@ -20,7 +20,6 @@ public class ResultTextField extends JTextField {
         this.setFont(FONT);
         this.setPreferredSize(TEXTFIELD_DIMENSION);
         this.setDocument(new JTextFieldLimit(7));
-        System.out.println(RESULT); //todo delete
         addCodeProvidedByUserChecker(codeComponentsPanel);
     }
 

@@ -73,7 +73,7 @@ public class CodeComponentsPanel extends JPanel implements IObserver {
         return resultTextField;
     }
 
-    public OpenButton getOpenButton() {
+    OpenButton getOpenButton() {
         return openButton;
     }
 

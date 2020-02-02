@@ -9,13 +9,15 @@ import java.awt.*;
 public class ContentJFrame extends JFrame {
     private final static int WINDOW_WIDTH = 500;
     private final static int WINDOW_HEIGHT = 500;
+    private final static int LOCATION_X = (int) (Toolkit.getDefaultToolkit().getScreenSize().getWidth() / 2 - WINDOW_WIDTH / 2);
+    private final static int LOCATION_Y = 100;
     private final static String TITLE = "Get a secret code to open the safe.";
     private final static String ICON_FILE = "icons8-safe-16.png";
 
     public ContentJFrame() {
         /*jFrame size&location settings (size first!)*/
         this.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
-        this.setLocation((int) (Toolkit.getDefaultToolkit().getScreenSize().getWidth() / 2 - this.getWidth() / 2), 100);
+        this.setLocation(LOCATION_X, LOCATION_Y);
 
         /*jFrame title*/
         this.setTitle(TITLE);

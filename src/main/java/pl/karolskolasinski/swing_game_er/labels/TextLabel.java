@@ -35,4 +35,5 @@ public class TextLabel extends JLabel {
     public static String getHexBefore() {
         return HEX_BEFORE;
     }
+
 }
