@@ -8,8 +8,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ArrowButton extends JButton implements ActionListener {
-    private static final String DOWN_TEXT = "\uD83D\uDD3B";
-    private static final String UP_TEXT = "\uD83D\uDD3A";
+    private static final String DOWN_TEXT = "▼";
+    private static final String UP_TEXT = "▲";
     private static final Color DOWN_COLOR = Color.RED;
     private static final Color UP_COLOR = Color.GREEN;
     private static final Font FONT = new Font(Font.SANS_SERIF, Font.PLAIN, 20);

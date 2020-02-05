@@ -6,8 +6,8 @@ import java.awt.*;
 public class TextLabel extends JLabel {
     private static final String HEX_BEFORE = "<html><span style='font-family: monospace;'>#HEX</span></html>";
     private static final String HEX_AFTER = "<html><span style='font-family: monospace;'>#CCCCCC</span></html>";
-    private static final String RED = "<html><span style='font-family: monospace;'>+3x</span><span style='font-size: 15px; color: red;'>\uD83D\uDD3B</span></html>";
-    private static final String GREEN = "<html><span style='font-family: monospace;'>-5x</span><span style='font-size: 15px; color: rgb(0, 255, 0);'>\uD83D\uDD3A</span></html>";
+    private static final String RED = "<html><span style='font-family: monospace;'>+3x</span><span style='font-size: 15px; color: red;'>▼</span></html>";
+    private static final String GREEN = "<html><span style='font-family: monospace;'>-5x</span><span style='font-size: 15px; color: rgb(0, 255, 0);'>▲</span></html>";
     private static final Color COLOR = Color.DARK_GRAY;
     private static final Font FONT = new Font(Font.SANS_SERIF, Font.PLAIN, 26);
     private static final int LABEL_SIZE_VERTICAL = 35;

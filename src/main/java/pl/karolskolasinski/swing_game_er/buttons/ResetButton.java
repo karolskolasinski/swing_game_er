@@ -9,8 +9,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ResetButton extends JButton implements ActionListener {
-    private static final String RESET_TEXT = "\uD83D\uDD04";
-    private static final Font FONT = new Font(Font.SANS_SERIF, Font.PLAIN, 20);
+    private static final String RESET_TEXT = "⟲";
+    private static final Font FONT = new Font(Font.SANS_SERIF, Font.PLAIN, 33);
     private static final int ARROW_BUTTON_SIZE_VERTICAL = 60;
     private static final int ARROW_BUTTON_SIZE_HORIZONTAL = 60;
     private static final Dimension ARROW_DIMENSION = new Dimension(ARROW_BUTTON_SIZE_HORIZONTAL, ARROW_BUTTON_SIZE_VERTICAL);
@@ -30,4 +30,5 @@ public class ResetButton extends JButton implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         resetPanel.reset();
     }
+
 }
