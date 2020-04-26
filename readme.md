@@ -7,3 +7,7 @@ a simple GUI game created using Java Swing
 - open the safe
 
 Have fun :)
+
+![pic start 1](https://raw.githubusercontent.com/karolskolasinski/swing_game_er/master/img/pic_full_start.png)
+
+![pic end 2](https://raw.githubusercontent.com/karolskolasinski/swing_game_er/master/img/pic_full_end.png)
